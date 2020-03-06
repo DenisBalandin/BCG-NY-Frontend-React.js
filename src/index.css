@@ -1,0 +1,180 @@
+#home_page {
+  background-image:url('img/background_dark_line.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+#screensaver_bg{
+  background-image:url('img/scrensaver_bg.png');
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+#weather_widget{
+  background-image:url('img/wheater_bg.png');
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+  .user{
+    width: 100%;
+    height: 50px;
+    background: #cccccc;
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+    -webkit-transition: background 0.4s ease;
+    transition: height 1.4s ease;
+  }
+  .userGreen{
+    width: 100%;
+    height: 90px;
+    background: green;
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+  
+    transition: height 1.4s ease;
+  }
+  .userGreen .nameColor{
+    color: #ffffff;
+  }
+  .main_block{
+    margin: 40px;
+  }
+  .rainbow{
+    animation-name: rainbowtext;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes rainbowtext {
+    0%{
+      color: red;
+      font-size: 20px;
+    }
+    25%{
+      color: orange;
+    }
+    50%{
+      color: yellow;
+      font-size: 40px;
+      transform: translateX(200px);
+    }
+    75%{
+      color: green;
+    }
+    100%{
+      color: blue;
+      font-size: 20px;
+    }
+  }
+  #DownFall{
+    margin: 0;
+    animation-name: donwfaal;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+  .grass{
+    background: green;
+    height: 600px;
+    width: 100%;
+    position: absolute;
+  }
+  .sun{
+    background: #f1c40f;
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    animation-name: sunanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .box{
+    background-color: orangered;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    border-radius: 20px;
+    animation-name:slideRight;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: 0s;
+  }
+  @keyframes slideRight{
+    50%{
+      transform: translate(500px);
+    }
+    100%{
+      transform: translate(0px);
+    }
+  }
+  @keyframes donwfaal{
+    0%{
+      background-color: black;
+    }
+    10%{
+      background-color: pink;
+    }
+    30%{
+      background-color: blue;
+    }
+    70%{
+      background-color: blue;
+    }
+    90%{
+      background-color: pink;
+    }
+    100%{
+      background-color: black;
+    }
+  }
+  @keyframes sunanimation{
+    0%{
+      transform: translate(0px,200px);
+      background-color: orange;
+    }
+    25%{
+      transform: translate(230px, 0px);
+      background-color: yellow;
+    }
+    50%{
+      transform: translate(560px, -50px);
+      background-color: yellow;
+    }
+    75%{
+      transform: translate(800px, -50px);
+      background-color: orange;
+    }
+    100%{
+      transform: translate(1020px, 200px);
+      background-color: red;
+    }
+  }
